@@ -48,7 +48,6 @@ class inzio():
 """)
         conn.cursor().execute("INSERT INTO ip (ipsend) VALUES(?)", [ip])
         conn.commit()
-        l = input("press enter:")
 
     if check == 2:
         iplist = ""
@@ -61,4 +60,3 @@ class inzio():
                 continente = checker["continent"]
                 iplist += f"➥ {ip} - {continente}\n"
             print(iplist)
-            l = input("press enter:")
