@@ -1,6 +1,8 @@
 from colorama import Fore as colore
 import requests, sys, os, sqlite3
 
+os.system('cls' if os.name == 'nt' else 'clear')
+
 try:
     conn = sqlite3.connect("database.db")
     conn.cursor().execute("CREATE TABLE IF NOT EXISTS ip (ipsend INT)")
